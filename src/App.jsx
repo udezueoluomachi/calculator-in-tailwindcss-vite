@@ -1,33 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {useState} from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [input, setInput] = useState(0)
+  const [output, setOutput] = useState("")
 
+  const lhsBtnsChars = [["7","8","9"],["4","5","6"],["1","2","3"],[".","0","="]]
+  const lhsBtnsCont = document.querySelector("#lhsBtnsCont");
+
+//bg-custom-grey
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="w-full min-h-[140px] h-[25vh] p-7 text-custom-off-white text-right">
+        <p className="font-semi-bold text-4xl">{input}</p>
+        <p className="font-medium text-lg mt-4">{output}</p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="bg-custom-grey text-custom-off-white flex p-px h-[75vh] font-light text-base">
+        <div className="w-10/12 min-h-[370px] h-full" id="lhsBtnsCont">
+          <div className="w-full h-1/4">
+            <button className="w-1/3 h-full">7</button>
+            <button className="w-1/3 h-full">8</button>
+            <button className="w-1/3 h-full">9</button>
+          </div>
+        </div>
+        <div className="w-2/12 min-h-[370px] h-full"></div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
