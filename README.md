@@ -2,6 +2,8 @@
 
 Just a basic app I created while learning tailwindcss
 
+Live preview : [here](https://calculator-in-tailwindcss-vite.vercel.app/)
+
 # Built with React + Vite, Styled with Tailwindcss
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
