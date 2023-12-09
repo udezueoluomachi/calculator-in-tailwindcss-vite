@@ -1,4 +1,8 @@
-# React + Vite
+# Calculator  App
+
+Just a basic app I created while learning tailwindcss
+
+# Built with React + Vite, Styled with Tailwindcss
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

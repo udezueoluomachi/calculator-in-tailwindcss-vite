@@ -10,6 +10,9 @@ export default {
           "off-white" : "#E0E0E0",
           orange : "#F19305"
         }
+      },
+      fontFamily : {
+        ss : ["seven-segment"]
       }
     },
   },
